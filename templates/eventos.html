@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenidos %}
+
+
+    
+<div class="container">
+  <header class="blog-header lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#">Eventos</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="10"/><path d="M23 23l-5.2-5.2"/></svg>
+        </a>
+      </div>
+    </div>
+    
+
+
+
+</div>
+
+<main class="container">
+  
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Eventos 1</h3>
+          <div class="mb-1 text-muted">21 Agosto del 2022 </div>
+          <p class="card-text mb-auto">Festejamos el dia del niño.</p>
+          <a href="#" class="stretched-link">Continuar leyendo</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="{% static 'images/evento al aire libre.jpg' %}" width="200" height="250" preserveAspectRatio="xMidYMid slice" focusable="false" alt="foto evento"/>
+          <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">foto evento</text></svg> -->
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Evento 2 </h3>
+          <div class="mb-1 text-muted">17 de Agosto del 2022</div>
+          <p class="mb-auto">PASO A LA INMORTALIDAD DEL GENERAL JOSE DE SAN MARTIN (1850).</p>
+          <a href="#" class="stretched-link">Continuar leyendo</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="{% static 'images/eventomucha gente.jpg' %}" width="200" height="250" preserveAspectRatio="xMidYMid slice" focusable="false" alt="foto evento"/>
+          <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">foto evento</text></svg> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Actividades Realizadas
+      </h3>
+
+      <article class="blog-post">
+        <h1 class="blog-post-title mb-1">Dia de la bandera </h1>
+        <p class="blog-post-meta">20 de Junio del 2022 <a href="#"></a></p>
+
+        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <hr>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title mb-1">DIA DE LOS CAIDOS EN LA GUERRA DE MALVINAS</h2>
+        <p class="blog-post-meta">24 de Marzo del 2022<a href="#"></a></p>
+
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <hr>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title mb-1">Dia nacional la memoria por la verdad y la justicia</h2>
+        <p class="blog-post-meta">24 de Marzo del 2022<a href="#"></a></p>
+
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+        <hr>
+
+      </article>
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary rounded-pill" href="#">mas antiguas</a>
+        <a class="btn btn-outline-secondary rounded-pill disabled">mas nuevas</a>
+      </nav>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4">
+          <div class="col-4 pt-1">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            <strong>Galeria de fotos</strong>
+            </a>
+           </div>
+          <h4 class="fst-italic">Archivos</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#">Marzo 2021</a></li>
+            <li><a href="#">Febrero 2021</a></li>
+            <li><a href="#">Enero 2021</a></li>
+            <li><a href="#">Diciembre 2020</a></li>
+            <li><a href="#">Noviembre 2020</a></li>
+            <li><a href="#">Octubre 2020</a></li>
+            <li><a href="#">Setiembre 2020</a></li>
+            <li><a href="#">Agosto 2020</a></li>
+            <li><a href="#">Julio 2020</a></li>
+            <li><a href="#">Junio 2020</a></li>
+            <li><a href="#">Mayo 2020</a></li>
+            <li><a href="#">Abril 2020</a></li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+
+{% endblock %}

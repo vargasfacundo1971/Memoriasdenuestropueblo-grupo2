@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+
+{% block contenidos %}
+
+<!--#archivo a borrar-->
+
+    <h1> Nuevo Comentario</h1>
+    <form method = "POST" class = "post-form">
+    {% csrf_token %}
+    {{form.as_p}}
+    <botton type = "submit" class = "save btn btn-defaul"> Enviar Comentario</botton>
+    </form>
+
+    <script> var editor = new MediumEditor('.editable');</script>
+
+{%  endblock %}
+

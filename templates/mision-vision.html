@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenidos %}
+
+
+
+        <div style="background-color: #FFDC96;">
+
+            <div class="d-flex align-items-center justify-content-center justify-content-md-auto py-1">
+                <h1 class="display-5 fw-bold">Misión-Visión</h1>
+            </div>
+
+            <div Class="d-flex align-items-center justify-content-center justify-content-md-auto py-1">
+                <div>
+                    <h5><em>Desde que fundamos la organización, nos pusimos como objetivo principal
+                    indagar en la historia arquitectónica de nuestra querida Fontana.</em></h5>
+                </div>
+            </div>
+           
+
+            <div class="container">
+                    <div class="block">
+                        <div class="image">
+                            <img src="{% static 'images/Mision.jpg' %}" alt="Misión">
+                        </div>
+                        <div class="content">
+                            <h5><u>Misión</u></h5>
+                            <p>Nuestra misión fundamental es llevar nuestros conocimientos sobre la historia arquitectónica de la localidad de fontana. Convencidos de que sólo a través de la educación promovemos el desarrollo de las personas a las que nos dirigimos y generamos nuevas oportunidades. <strong>Además, garantizamos el acceso a la historia focalizando nuestros proyectos y/o evento a otros ámbitos necesarios, como la construcción y mantenimiento de infraestructuras sociales.</strong> </p>
+                        </div>
+                    </div>
+                        
+    
+                    <div class="block">
+                        <div class="image">
+                            <img src="{% static 'images/Vision.jpg' %}" alt="Visión">
+                        </div>
+                        <div class="content">
+                            <h5><u>Visión</u></h5>
+                            <p>Queremos ser una organización reconocida por el impacto de nuestras actuaciones en el bienestar y el desarrollo de las comunidades con las que trabajamos, así como por nuestra integridad y profesionalidad en el modo de actuar.</p>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="image">
+                            <img src="{% static 'images/objetivos.jpg' %}" alt="Objetivos">
+                        </div>
+                        <div class="content">
+                            <h5><u>Objetivos</u></h5>
+                            <p><ul>
+                            <li type="disc">Tenemos como objetivos principales poder organizar eventos relacionados a la historia de la
+                               localidad como también poder participar y llevar nuestra sabiduría a todos los habitantes posibles.</li>
+                             <li type="disc">Trabajar en conjunto con el municipio para llevar a cabo diversos eventos relacionado a lo
+                               social, cultural y educativo.</li>
+                             <li type="disc">Festejar los días patrios tanto del país como de <strong>nuestra querida</strong> Fontana.</li>
+                             <li type="disc">Poder dar a conocer a todas las personas sobre nuestra humilde radio para que puedan sintonizarnos e ir dialogando entre todos, con la idea de ir mejorar como sociedad y como fundación.</li>
+                             <li type="disc">Visitar distintas instituciones para llevar nuestra historia y que nos cuenten la suyas. Como así
+                               también, para poder ver en qué estado se encuentra y tratar de lograr una posible ayuda en lo que respecte.</li></ul></p>
+                        </div>
+    
+                    </div>
+    
+            </div>
+        </div>
+
+{% endblock %}

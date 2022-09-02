@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenidos %}
+
+<article class="row mt-5">
+        <h1> {{noticia.titulo}} </h1>
+
+        <div class = "date"> {{ noticia.creado }}</div>
+        <div class="col-md-5">
+            <img src="{{MEDIA_ROOT}}/{{noticia.img}}" width="100%" alt="{{ noticia.titulo }}">
+        </div>
+        <p>
+        {{ noticia.contenido|safe|linebreaksbr }}
+        </p>
+
+        <hr>
+        {% if user.is_authenticated %}
+            <h3>Escribe un comentario</h3>
+            <form method="POST" style="margin-top: 1.3em;">
+            {% csrf_token %}
+            {{ formulario_comentario.as_p }}
+            
+            <button type="submit" class="btn btn-primary  btn-lg">Enviar comentario</button>
+            </form>
+        {% else %}
+        <p>Para agregar comentarios debe autenticarse <br>
+            <a href="{% url 'apps.blog_auth:login' %}">Iniciar sesión</a>
+            <a href="{% url 'apps.blog_auth:register' %}">Registrarse</a></p>
+        {% endif %}
+        <hr>
+        <div class="container">
+            {% for comentario in noticia.comentario.all %}
+                <br>
+                {% if user.is_authenticated or comment.approved_comment %}
+
+                    {{ comentario.creado }}
+                    {% if not comment.approved_comment %}
+                        <a class="btn btn-default" href="{% url 'comment_remove' id=comentario.id %}"><span class="glyphicon glyphicon-remove"></span></a>
+                        <a class="btn btn-default" href="{% url 'comment_approve' id=comentario.id %}"><span class="glyphicon glyphicon-ok"></span></a>
+                    {% endif %}
+                    <p>{{ cuerpo_comentario.text|safe|linebreaks }}</p>
+                    <p>Posted by: <strong>{{ comentario.autor }}</strong></p>
+                {% endif %}
+                {% empty %}
+                <p>No hay comentarios.</p>
+            {% endfor %}
+        </div>
+    </article>
+    
+{% endblock %}
+

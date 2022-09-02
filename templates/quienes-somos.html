@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenidos %}
+
+  <div style="background-color: #FFDC96;">
+        <div class="d-flex align-items-center justify-content-center justify-content-md-auto py-1">
+          <h1 class="display-5 fw-bold">¿Quiénes Sómos?</h1>
+        </div>
+ 
+        <div Class="d-flex align-items-center justify-content-center justify-content-md-auto py-1">
+          <div><h5><em>Somos un equipo de trabajo para mejorar la Fundación llamada <strong>"<u>Memorias de Nuestro Pueblo</u>"</strong> ubicada en la localidad de Fontana.</em></h5></div>
+        </div>
+        <div class="container text-center">
+            <h6><em>El equipo está compuesto por un total de 4 personas, diespuestas a desarrollar actividades culturales y socio-educativas.</em></h6>
+        </div>     
+       
+          <div class="container">
+             
+            <div class="card">
+                  <img src="{% static 'images/Presidente.jpeg' %}">
+                  <h5 class="card-title"><u>Presidente</u></h5>
+                  <p class="card-text">Ricardo Esteban Sosa</p>
+                  <a class="card-text"><small class="text-muted">Es el encargado de tomar las decisiones adecuadas para la mejoría de la fundación.</small></a>
+            </div>
+          
+            <div class="card">
+                <img src="{% static 'images/Vice-Presidenta.jpeg' %}">
+                <h5 class="card-title"><u>Vice-Presidenta</u></h5>
+                <p class="card-text">Nombre Vicepresidenta</p>
+                <a class="card-text"><small class="text-muted">Es la encargada de tomar las decisiones en conjunto con el presidente.</small></a>
+            </div>
+         
+          </div>
+
+          <div class="container">
+             
+              <div class="card">
+                  <img src="{% static 'images/Secretaria.jpeg' %}" class="img-fluid rounded-start" alt="...">
+                    <h5 class="card-title"><u>Secretaria</u></h5>
+                    <p class="card-text">Giselle Monzón</p>
+                    <a class="card-text"><small class="text-muted">Se encarga de anotar en el Acta todo movimiento realizado por la organización.</small></a>
+              </div>
+        
+                <div class="card">
+                  <img src="{% static 'images/Tesorera.jpeg' %}" class="img-fluid rounded-start" alt="...">
+                  <h5 class="card-title"><u>Tesorera</u></h5>
+                  <p class="card-text">Sandra Garcia</p>
+                  <a class="card-text"><small class="text-muted">Se encarga de la administración monetaria de la organización.</small></a>
+                </div>
+            
+          </div>
+
+  </div>
+
+{% endblock %}
